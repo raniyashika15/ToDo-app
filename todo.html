@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f8f9fa;
+                margin: 0;
+                padding: 0;
+            }
+            .todo-container {
+                max-width: 400px;
+                margin: 40px auto;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                padding: 24px 20px 32px 20px;
+            }
+            h2 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 20px;
+            }
+            #taskName {
+                width: 70%;
+                padding: 8px 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                margin-right: 8px;
+                outline: none;
+                transition: border 0.2s;
+            }
+            #taskName:focus {
+                border: 1.5px solid #007bff;
+            }
+            #addBtn {
+                padding: 8px 16px;
+                background: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                font-size: 18px;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            #addBtn:hover {
+                background: #0056b3;
+            }
+            #taskContainer > div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #f1f3f4;
+                border-radius: 4px;
+                padding: 10px 12px;
+                margin-top: 12px;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+            }
+            #taskContainer span {
+                flex: 1;
+                font-size: 16px;
+                color: #222;
+                margin-right: 10px;
+                word-break: break-all;
+            }
+            #taskContainer input[type="checkbox"] {
+                margin-right: 10px;
+                transform: scale(1.2);
+                accent-color: #007bff;
+            }
+            #taskContainer button {
+                background: #dc3545;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                padding: 5px 10px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            #taskContainer button:hover {
+                background: #b52a37;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="todo-container">
+            <h2>Todo List</h2>
+            <input type="text" id="taskName" placeholder="Enter a new task">
+            <button id="addBtn">+</button>
+            <div id="taskContainer"></div>
+        </div>
+        <script src="todo.js"></script>
+    </body>
+</html>
